@@ -1,0 +1,28 @@
+* {
+    top: 0;
+    left: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* start header  */
+.header-img-top {
+    position: absolute;
+    width: 100%;
+    height: 4.8%;
+    display: flex;
+    justify-content:center;
+}
+
+.header-img-mid img {
+    display: block;
+    margin: 110px auto;
+    width: 98%;
+    height: 70vh;
+    border-radius: 45px;
+}
+
+/* end header  */
