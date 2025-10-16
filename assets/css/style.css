@@ -13,6 +13,10 @@ body {
     margin: 0 auto;
 }
 
+@keyframes nav-animation {
+    0% {width: 130px;}
+    100% {width: 300px;}
+}
 /* start nav  */
 .nav-box {
     padding: 20px 50px;
@@ -20,22 +24,67 @@ body {
     justify-content: space-evenly;
     align-items: center;
     background-color: #1e88e58d;
-    border-radius: 30px;
+    border-radius: 20px;
 }
 
 .home-page {
     color: #ffffff91;
     text-decoration: none;
-    padding: 0 8px;
+    padding: 2px 8px;
     cursor: pointer;
-    transition: all ease-in 0.4s;
+    transition: all ease-in 0.3s;
+    position: relative;
 
-    &:hover {
+    &:hover i {
+        color: #1E88E5;
+    }
+    &:hover{
         color: #ffffff;
+    }
+
+    &:hover ul {
+        display: block;
     }
 
     &:focus {
         color: #FAB957;
+    }
+}
+
+.home-page i {
+    font-size: 13px;
+    display: inline-block;
+
+    transition: all ease-in 0.3s;
+
+}
+
+.home-page ul {
+    list-style: none;
+    display: none;
+    width: 300px;
+    position: absolute;
+    z-index: 1;
+    top: 39px;
+    right: 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 15px 25px;
+    background-color: #1e88e58d;
+    animation-name: nav-animation;
+    animation-duration: 0.5s;
+}
+
+.home-page ul a {
+    display: block;
+    padding: 5px 0;
+    margin-bottom: 5px;
+    color: #fff;
+    text-decoration: none;
+    transition: all ease-out 0.2s;
+
+    &:hover {
+        color: #1E88E5;
     }
 }
 
@@ -54,7 +103,7 @@ body {
 
     &:focus {
         color: #fff;
-        outline-color: rgba(0, 0, 0, 0.14);
+        outline-color: #1e88e580;
         transition: all ease-in 0.5s;
     }
 }
@@ -77,12 +126,12 @@ body {
 /* start header  */
 .header-box-items {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
 .header-box-item {
-    width: 45%;
+    width: 25%;
     background-image: url('/assets/imgs/new-york-city_3840x2400_xtrafondos.com.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -124,3 +173,7 @@ body {
     }
 }
 /* end header  */
+
+/* start  */
+
+/* end  */
