@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Tahoma';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('/assets/imgs/4k\ Green\ Abstract\ Wallpaper\ HD\ Image.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* start login */
+
+.icon-back {
+    height: 30px;
+}
+
+.icon-back a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    transition: all ease-in 0.2s;
+
+    &:hover {
+        transform: translate(-2% , 0%);
+    }
+}
+
+.form-items {
+    background-color: rgba(127, 255, 212, 0.367);
+    border-radius: 30px;
+    padding: 50px 30px;
+}
+
+.form-item {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+
+}
+
+input {
+    outline: none;
+    border: none;
+    padding: 15px 25px;
+    background-color: #00CC99;
+    border-radius: 40px;
+    margin: 10px 0;
+    color: #fff;
+}
+
+label {
+    margin-right: 10px;
+    font-weight: 600;
+    color: #1c5650;
+}
+
+.login {
+    padding: 10px 15px;
+    border-radius: 20px;
+    background-color: #00CC99;
+    margin-top: 30px;
+    width: 100%;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    color: #1c5650;
+}
+
+.sign {
+    padding: 10px 15px;
+    border-radius: 20px;
+    background-color: #00CC99;
+    margin-top: 10px;
+    width: 100%;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    color: #1c5650;
+}
+    
+/* end login */
